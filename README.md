@@ -20,4 +20,7 @@ The operating system was MacOS Mojave - 10.14.6.
 ## Test the deployment
 
 * Go to `k8s-master` via ssh. `vagrant ssh k8s-master`
-* Check if nodes are up and running `kubectl get nodes`
+* Check if nodes are up and running. `kubectl get nodes`
+* Visit the directory `/vagrant/test`. `cd /vagrant/test`
+* Deploy an example app ([Taken from here](https://auth0.com/blog/kubernetes-tutorial-step-by-step-introduction-to-basic-concepts/)). `kubectl apply -f deployment.yaml` 
+* Check that everything is working. `kubectl get pods -A` 
