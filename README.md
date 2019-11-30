@@ -25,4 +25,4 @@ Tests were executed under MacOS Mojave - 10.14.6.
 * Deploy an example app ([taken from here](https://auth0.com/blog/kubernetes-tutorial-step-by-step-introduction-to-basic-concepts/)). `kubectl apply -f deployment.yaml` 
 * Check that everything is working. `kubectl get pods -A` 
 
-![k8s up and running](https://drive.google.com/file/d/1DtgoQO-hfYMsCKo425kLmRJORT3p9bmE/view?usp=sharing)
+![](img/k8srunning.png)
