@@ -13,12 +13,16 @@ Vagrant.configure("2") do |config|
         master.vm.box = IMAGE_NAME
         master.vm.network "private_network", ip: "192.168.200.100"
         master.vm.hostname = "k8s-master"
+	master.vm.provider "virtualbox" do |v|
+		v.memory = 3072
+	end
         master.vm.provision "ansible" do |ansible|
             ansible.playbook = "kubernetes-setup/master-playbook.yml"
             ansible.extra_vars = {
                 node_ip: "192.168.200.100",
             }
         end
+	master.vm.provision "shell", path: "scripts/dockercompose.sh"
     end
 
     (1..N).each do |i|
