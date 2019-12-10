@@ -2,6 +2,8 @@
 
 This repository provides a set of files that allows the deployment of a kubernetes cluster formed by VirtualBox vms.
 The information used to create these files was retrieved from this [blog post](https://kubernetes.io/blog/2019/03/15/kubernetes-setup-using-ansible-and-vagrant/) written by Naresh L J (Infosys).
+However original post has some issues that were fixed. 
+The fixed issues are commented [here](FIXED.md).
 
 ## Software requirements
 
