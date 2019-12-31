@@ -98,9 +98,9 @@
      - cp -i /etc/kubernetes/admin.conf /home/vagrant/.kube/config
      - chown vagrant:vagrant /home/vagrant/.kube/config
 
-  - name: Install calico pod network
+  - name: Install cilium pod network
     become: false
-    command: kubectl apply -f https://docs.projectcalico.org/v3.10/manifests/calico.yaml
+    command: kubectl apply -f https://raw.githubusercontent.com/cilium/cilium/v1.3/examples/kubernetes/1.12/cilium.yaml
 
   - name: Generate join command
     command: kubeadm token create --print-join-command
