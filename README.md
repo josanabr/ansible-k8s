@@ -5,7 +5,7 @@ The information used to create these files was retrieved from this [blog post](h
 However original post has some issues that were fixed. 
 The fixed issues are commented [here](FIXED.md).
 
-** Overlay network ** In this deployment the cilium overlay network project is used. 
+**Overlay network** In this deployment the cilium overlay network project is used. 
 More information can be retrieved from [here](https://docs.cilium.io/en/v1.3/gettingstarted/cilium_install_docker/).
 
 ## Software requirements
