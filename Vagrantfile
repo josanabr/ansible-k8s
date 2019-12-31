@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
         master.vm.hostname = "k8s-master"
 	master.vm.provider "virtualbox" do |v|
 		v.memory = 3072
-		v.cpus = 1
+		v.cpus = 2
 	end
         master.vm.provision "ansible" do |ansible|
             ansible.playbook = "kubernetes-setup/master-playbook.yml"
