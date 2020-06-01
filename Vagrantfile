@@ -1,4 +1,5 @@
-IMAGE_NAME = "bento/ubuntu-16.04"
+#IMAGE_NAME = "bento/ubuntu-16.04"
+IMAGE_NAME = "ubuntu/xenial64"
 N = 2
 
 Vagrant.configure("2") do |config|
@@ -27,7 +28,7 @@ Vagrant.configure("2") do |config|
     end
 
     (1..N).each do |i|
-        config.vm.define "node-#{i}" do |node|
+        config.vm.define "k8s-worker#{i}" do |node|
             node.vm.box = IMAGE_NAME
             node.vm.network "private_network", ip: "192.168.200.#{i + 100}"
             node.vm.hostname = "node-#{i}"
