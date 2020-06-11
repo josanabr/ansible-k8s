@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
     config.ssh.insert_key = false
 
     config.vm.provider "virtualbox" do |v|
-        v.memory = 1024
+        v.memory = 2048
         v.cpus = 2
     end
       
@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
         master.vm.network "private_network", ip: "192.168.200.100"
         master.vm.hostname = "k8s-master"
 	master.vm.provider "virtualbox" do |v|
-		v.memory = 3072
+		v.memory = 8192
 		v.cpus = 2
 	end
         master.vm.provision "ansible" do |ansible|
