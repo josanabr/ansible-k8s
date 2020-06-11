@@ -5,6 +5,16 @@ The information used to create these files was retrieved from this [blog post](h
 However original post has some issues that were fixed. 
 The fixed issues are commented [here](FIXED.md).
 
+---
+
+## Nota sobre la rama `openfaas`
+
+OpenFaaS es una tecnología que posibilita la ejecución de funciones como servicios.
+Estas funciones se encuentran implementadas en contenedores. 
+Este rama permite la instalación de la herramienta `faas-cli` que permite la gestión de *Function as a Service* desde la línea de comandos.
+
+---
+
 ## Software requirements
 
 * VirtualBox - 6.0.14r133895
