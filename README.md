@@ -13,6 +13,10 @@ OpenFaaS es una tecnología que posibilita la ejecución de funciones como servi
 Estas funciones se encuentran implementadas en contenedores. 
 Este rama permite la instalación de la herramienta `faas-cli` que permite la gestión de *Function as a Service* desde la línea de comandos.
 
+## Nota sobre la rama  `kubectl`
+
+En esta rama se incorporará la instalación de OpenFaaS usando el comando `kubectl`
+
 ---
 
 ## Software requirements
